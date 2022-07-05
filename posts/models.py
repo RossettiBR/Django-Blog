@@ -26,3 +26,8 @@ class Post(models.Model):
 
     def __str__(self) -> str:
         return self.titulo_post
+
+    def save(self, *args, **kwargs):
+        super().save(*args, **kwargs)
+
+        
